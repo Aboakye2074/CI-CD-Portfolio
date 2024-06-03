@@ -27,7 +27,7 @@ pipeline {
                     sh 'cp springboot-app/target/*.jar $WORKSPACE'
                     
                     // Upload the JAR file to S3 bucket
-                    sh 'aws s3 cp $WORKSPACE/*.jar s3://portfolio-madhura/'
+                    sh 'aws s3 cp $WORKSPACE/*.jar s3://tony-images-202020/'
                 }
             }
         }
